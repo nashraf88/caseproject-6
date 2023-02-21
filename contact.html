@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="caastylesheet.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Considering Adoption Contact</title>
+    <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1><a href="contact.html">Considering Adoption</a></h1><h6>Created by Nazia Ashraf</h6></header>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Adoption Types</a></li> 
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>  
+                </ul> 
+        </nav>
+    <main>
+        <div id="contactpic"></div>
+        <h2>Contact us</h2>
+        <p>You can contact us by sending us an email and telling us about your interest in adoption and if you are
+             interested in adoption we can go into further details about it.</p>
+        <p>You can also get in touch with us using Facebook as the social media channel. You can also contact us 
+            using the contact form below. Fill out the form below to start the application. All information is 
+            required.</p>
+        
+       <form method="post" action="https://webdevbasics.net/scripts/adoptionsite.php"></form>
+
+        <form>
+            <label for="myName">Name*:</label>
+            <input type="text" name="myName" id="myName">
+            
+            <label for="mySpouseName">Spouse Name:</label>
+            <input type="text" name="mySpouseName" id="mySpouseName">
+
+            <label for="myPhone">Primary Phone*:</label>
+            <input type="number" name="myPhone" id="myPhone" maxlength="15">
+
+            <label for="myEmail">Email*:</label>
+            <input type="email" name="myEmail" id="myEmail">
+
+            <label for="myAddress">Street Address*:</label>
+            <input type="text" name="myAddress" id="myAddress">
+
+            <label for="myCity">City*:</label>
+            <input type="text" name="myCity" id="myCity">
+
+            <label for="myState">State*:</label>
+            <select>
+                <option>Select</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>      
+            </select>
+
+            <label for="myZip">Zip Code*:</label>
+            <input type="number" name="myZip" id="myZip" maxlength="5">
+
+            <h5>Interested In</h5><br>
+            <input type="checkbox" name="adopt" id="adopt" value="yes">Adopting a child<br>
+            <input type="checkbox" name="place" id="place" value="yes">Placing a child<br>
+            <input type="checkbox" name="connect" id="connect" value="yes">Connecting with a birth parent or child<br>
+            <input type="checkbox" name="find" id="find" value="yes">Finding childcare<br>
+            <input type="checkbox" name="sponsor" id="sponsor" value="yes">Sponsorship opportunities<br>
+            <input type="checkbox" name="emergency" id="emergency" value="yes">Emergency help to pay for child care<br>
+            <input type="checkbox" name="therapy" id="therapy" value="yes">Post adoption therapy<br>
+            <input type="checkbox" name="related" id="related" value="yes">Parenting a child of a relative<br>
+            <input type="checkbox" name="volunteer" id="volunteer" value="yes">Volunteer Opportunities<br>
+            <input type="checkbox" name="support" id="support" value="yes">Support Groups<br>
+            <label for="myMessage">Message</label>
+            <textarea name="myMessage" id="myMessage" rows="10" cols="10">
+            </textarea>
+            <input type="submit" onclick="testformcompleteness()" value="Apply Now" id="mySubmit">
+            
+        </form>
+    </main>
+    <br>
+    <footer>Copyright &copy; 2022 Considering Adoption Agency<br><a href="mailto:info@consideringadoption.com">
+        info@consideringadoption.com</a></footer>
+     </div> 
+
+    <script src="snoot.js"></script>
+    </body></html>

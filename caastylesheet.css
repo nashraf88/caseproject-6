@@ -1,0 +1,94 @@
+*{ box-sizing: border-box;}
+#wrapper {background-color: #71A5DE;padding: 0;}
+body {font-family:Tahoma,Arial,sans-serif; 
+    background-color: #D2B48C; 
+    color: #002b5a; 
+    margin: 0;
+background-repeat: no-repeat;}
+
+header {background-color: #E1ECF7;
+    text-align: none;
+   
+    padding-top: 5px; padding-bottom: 3px; 
+    background-image: url(adoptionlogo2.png); background-repeat: no-repeat; 
+    padding-left: 105px; color: #231814; height: 150px;}
+
+    header a:link {text-decoration: none; color:#002b5a;}
+    header a:visited {text-decoration: none; color:#002b5a;}
+    header a:hover {text-decoration:none;color: #71A5DE;}
+h1 {font-size: 2em; text-align: center; text-shadow: 2px 2px #bca9fa;} h2{color: #002b5a;}
+nav {font-size: 1.5em; text-align: center; }
+nav a {text-decoration: none;}
+nav a:link {color: #000000;}
+nav a:visited {color: #565555;}
+nav a:hover {color: #c0d3e9f5;}
+nav ul {list-style:none; padding: 0; margin: 0; font-size: 1.25em; flex-direction: column;}
+nav li {padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 1em; padding-left: 1em; width: 100%; 
+    border-bottom: solid 1px;}
+h4 {background-color: #71A5DE; font-size: 1.2em; padding-left: 0.5em; padding-bottom: 0.25em; 
+    text-transform: uppercase; border-bottom:0; padding-bottom: 0; clear: left;}
+h3 {color: #002b5a;} dt{color: #002b5a;}
+h6 {color: #002b5a;}
+main {padding-left: 0; padding-right: 0; padding-bottom: 2em; display: block; padding-top: 0; margin: none; 
+    overflow: auto; background-color: #F8F9FB;}
+    main h1, main h2, main h3, main h4, main p, main div, main dl
+{padding-left: 2em; padding-right: 2em;}
+
+    main ul{padding-left: 2em; padding-right: 2em;}
+
+.details{padding-left: 10%; padding-right: 20%; overflow: auto;}
+img{padding-left: 10px; padding-right: 10px;}
+#homepic{height: 300px; background-image: url(homepic1.webp); background-size:100% 100%; background-repeat: no-repeat;}
+footer {background-color: #a7d1fb; font-size: .60em; font-style: italic; text-align: center; padding: 1em; 
+    border-top: 2px solid #002b5a;}
+#adoptiontype {height: 650px; background-image: url(adoptiontypepic.png); background-size: 100% 100%; 
+    background-repeat: no-repeat;}
+#overviewpic {height: 2000px; background-image: url(Facts-About-Domestic-Adoption-01.png); background-size: 100% 100%; 
+    background-repeat: no-repeat;}
+#mobile {display: inline;}
+#desktop {display:none;}
+#contactpic{height: 600px; background-image: url(babypic.jpg); background-repeat: no-repeat; 
+    background-size: 100% 100%;}
+table {width: 90%; margin: auto; border-spacing: 0;}
+td,th {padding: 10px;}
+tr:nth-of-type(odd) {background-color: #71A5DE;}
+
+form {display: flex; flex-direction: column; padding-left: 1em; width: 80%;}
+input, textarea {margin-bottom: 0.5em;}
+
+.item {background-color: #faf9f7; margin: 1em; padding: 1em; overflow: auto;}
+.item img {float: right;}
+
+@media only screen and (min-width:600px) {
+    body {margin: 0; background-image: none; background-repeat: no-repeat;}
+    header {text-align: center; padding-left: 0;}
+    h1 {font-size: 3em;}
+    nav ul {flex-wrap: nowrap; display: flex; flex-direction: row; justify-content: space-around;}
+    nav li {border-bottom: none;}
+    #homepic {height: 50vh; background-image: url(homepic1.webp); background-repeat: no-repeat; }
+    #adoptiontype {background-image: url(adoptiontypepic.png); background-repeat: no-repeat;}
+    #overviewpic {background-image: url(Facts-About-Domestic-Adoption-01.png); background-repeat: no-repeat;}
+    #flow {display: flex; flex-direction: row;}
+    #mobile {display: none;}
+    #desktop {display: inline;}
+    .details {display: flex; flex-direction: row;}
+    h4 {margin-left: 10%; margin-right: 10%;}
+    form {width: 40%; display: grid; gap: 1em; grid-template-columns: 6em 1fr;}
+    input[type="submit"] {grid-column: 2/3; width: 9em;}
+    #contactpic {background-image: url(babypic.jpg);}
+}
+@media only screen and (min-width:1024px) {
+    body {margin: 0; background-image: none; background-repeat: no-repeat;}
+    header {grid-area: header;}
+    nav {grid-area: nav;}
+    main {grid-area: main;}
+    footer {grid-area: footer;}
+    #wrapper {display: grid;
+    grid-template: 
+    "header header"
+    "nav    main"
+    "footer footer"
+    /   200px;}
+    nav ul {display: flex; flex-direction: column;}
+    header {background-image: url(adoptionlogo2.png); background-repeat: no-repeat;}       
+}

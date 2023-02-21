@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="caastylesheet.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Types</title>
+    <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1><a href="types.html">Considering Adoption</a></h1><h6>Created by Nazia Ashraf</h6></header>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Adoption Types</a></li> 
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="overview.html">Overview</a></li>  
+            </ul> 
+        </nav>
+    <main>
+        <div id="adoptiontype"></div>
+        <h2>Types of Adoption</h2>
+        <p>Sometimes, the best teachers are the ones who have been through it themselves. It can be comforting to 
+            read about people dealing with similar issues, and we shortlisted the basic types of adoption for you 
+        to prepare yourselves and then decide which one would be suitable for you.</p>
+        
+        <table>
+            <tr>
+                <th>Intercountry Adoption</th>
+        <td>Adopting a child from another country can be complicated and expensive. Some countries have 
+            significantly reduced the number of children that are available to be adopted, and others have 
+            eliminated international adoption entirely.</td>
+        </tr>
+           <tr>
+               <th>Domestic Adoption</th>
+        <td>Adopting a child from locally is comparatively easier but expensive. It involves adopting the child 
+            within the country to avoid travelling out of country and get in to cumbersome issues like the visa 
+            approvals and permission from other country to adopt a child.</td>
+    </tr>
+        <tr>
+            <th>Transracial Adoption</th>
+        <td>Transracial or transcultural adoption means placing a child who is of one race or ethnic group with 
+            adoptive parents of another race or ethnic group.</td>
+        </tr>
+        <tr>
+            <th>Special Needs Adoption</th>
+        <td>Special needs adoptions refers to any adoption of a child that has needs that might makes it harder to 
+            find an adoptive family. These special needs can range from minor medically correctable issues to life 
+            altering conditions.</td>
+        </tr>
+        <tr>
+            <th>Foster Care Adoption</th>
+        <td>Foster care adoption is the adoption of a child in foster care whose biological parents’ rights have been 
+            terminated by a court. The child may be adopted by either his or her foster parents or another adoptive 
+            family.</td>
+        </tr>
+        </table>
+
+        <article>
+            <h2>Adoption Costs</h2>
+            <form>
+               <input type="checkbox" id="item1" value="40000" />
+               <label for="item1">Intercountry Adoption ($40000.00)</label>
+               <input type="checkbox" id="item2" value="50000" />
+               <label for="item2">Domestic Adoption ($50000.00)</label>
+               <input type="checkbox" id="item3" value="30000" />
+               <label for="item3">Transracial Adoption ($30000.00)</label>
+               <input type="checkbox" id="item4" value="10000" />
+               <label for="item4">Special Needs Adoption ($10000.00)</label>
+               <input type="checkbox" id="item5" value="0" />
+               <label for="item5">Foster Care Adoption ($0.00)</label>
+               <input type="submit" id="submit" value="Submit" />
+            </form>
+         </article>
+         <script>
+            function calcTotal() {
+               var itemTotal = 0;
+               var item1 = document.getElementById("item1");
+               var item2 = document.getElementById("item2");
+               var item3 = document.getElementById("item3");
+               var item4 = document.getElementById("item4");
+               var item5 = document.getElementById("item5");
+               (item1.checked) ? (itemTotal += 40000) : (itemTotal += 0);
+               (item2.checked) ? (itemTotal += 50000) : (itemTotal += 0);
+               (item3.checked) ? (itemTotal += 30000) : (itemTotal += 0);
+               (item4.checked) ? (itemTotal += 10000) : (itemTotal += 0);
+               (item5.checked) ? (itemTotal += 0) : (itemTotal += 0);
+               var salesTaxRate = 0.07;
+               itemTotal *= 100;
+               var orderTotal = (itemTotal + (itemTotal * salesTaxRate)) / 100;
+               alert("Your order total is $" + orderTotal);
+               if(orderTotal >= 50000){
+                alert("Your order total is greater than $50,000, better to think of surrogacy as a second option as well, because the cost of surrogacy is similar to Intercountry and DOmestic Adoption.");
+               }
+               else if(orderTotal <= 40000){
+                alert("Your order total is in the range where other adoption types can also be put into consideration.");
+               }
+            }
+            document.getElementById("submit"). addEventListener("click", calcTotal, false);
+         </script>
+    </main>
+    <br>
+    <footer>Copyright &copy; 2022 Considering Adoption Agency<br><a href="mailto:info@consideringadoption.com">
+        info@consideringadoption.com</a></footer> </div> </body></html>
